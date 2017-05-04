@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html ng-app="test">
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+     <!-- 使在移动设备上有较好显示 -->
+ 
+     <link rel="stylesheet" type="text/css" href="index.css">
+ 
+     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=91bc04aac3d665927d8c64750da556a9"></script>
+     <!-- ak="xxx",xxx为百度地图秘钥，使用1.5及以上版本需申请 -->
+
+     <title>广州大学城寻路</title>
+
+ </head>
+ <body>
+     <div id="left">
+         <div id="search" ng-app="" ng-controller="myCtrl">
+             起点：<input type="text" ng-model="init" required><br>
+             终点：<input type="text" ng-model="ended" required><br>
+             <button ng-click="go()" style="position:absolute; top:20px; left:250px; z-Index:99; padding:5px">查询</button>
+         </div>
+         <br>
+         <div id="r-result"></div>
+     </div>
+     <div id="l-map"></div>
+     
+      <script type="text/javascript" src="angular.js"></script>
+     
+      <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+      <!-- 用于设置地图显示范围 -->
+     
+     <script type="text/javascript" src="myControl.js"></script>
+ </body>
+ </html>

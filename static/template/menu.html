@@ -1,0 +1,84 @@
+<div class="menu-wrapper">
+	<div class="menu-item_title">
+		<span ng-bind="menuInfo.menuItemTitle" class="title-middle"></span>
+		<!-- <span class="title-middle"></span> -->
+	</div>
+	<div class="menu-item-wrapper">
+		<div class="item-row">
+			<div class="col">
+				<a class="icon-table" href="/view/signRecords">
+				</a>
+				<div class="operation-caption"><span>我的考勤</span></div>
+			</div>
+			<div class="col" >
+				<a class="icon-file-text-o" style="background: #85CA60;" href="/view/signRecords">
+				</a>
+				<div class="operation-caption"><span>公出申请</span></div>
+			</div>
+			<div class="col">
+				<a class="icon-building-o" style="background: #EDAD21;" href="/view/2">
+				</a>
+				<div class="operation-caption"><span>加班申请</span></div>
+			</div>
+		</div>
+		<div class="item-row">
+			<div class="col">
+				<a class="icon-hospital-o" style="background: #E87657;" href="#/view/0">
+				</a>
+				<div class="operation-caption"><span>签卡申请</span></div>
+			</div>
+			<div class="col">
+				<a class="icon-calendar-plus-o" style="background: #AC68B5;" href="#/view/1">
+				</a>
+				<div class="operation-caption"><span>加班换调休申请</span></div>
+			</div>
+			<div class="col">
+				<a class="icon-calendar-times-o" style="background: #CED372;" href="#/view/sign">
+				</a>
+				<div class="operation-caption"><span>签到管理</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.menu-wrapper{
+		height: 100%;
+	}
+	.menu-wrapper .menu-item_title{
+		background: #F0F0F0;
+		height: 30px;
+		padding-left: 10px;
+	}
+	.menu-wrapper .menu-item_title .title-middle{
+		display: table-cell;
+		height: 30px;
+		vertical-align: middle;
+	}
+
+	.item-row{
+		display: flex;
+		padding-top: 20px;
+	}
+	.item-row .col{
+		flex: 1;
+		font-size: 50px;
+		text-align: center;
+	}
+	.item-row .col a{
+		display: block;
+		margin: 0 auto;
+		width: 70px;
+		height: 70px;
+		border-radius: 20px;
+		background: #58C4EB;
+		text-decoration: none;
+		color: #FFFFFF;
+		line-height: 70px;
+		text-align: center;
+	}
+	.item-row .col .operation-caption{
+		width: auto;
+		margin: 5px auto;
+		font-size: 15px;
+	}
+</style>

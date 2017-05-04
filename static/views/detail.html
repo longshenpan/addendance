@@ -1,0 +1,8 @@
+<div>Subject: {{message.subject}}</div>
+<div>Sender: {{message.sender}}</div>
+<div>Date: {{message.date}}</div>
+<div>To: 
+	<span ng-repeat="recipient in message.recipients">{{recipient}}</span>
+</div>
+<div>{{message.message}}</div>
+<a href="#/">Back to message</a>

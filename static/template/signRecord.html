@@ -1,0 +1,55 @@
+<div class="signRecord-wrapper">
+	<div class="signrecord-head">
+		<span ng-bind="signRecord.signRecordTitle"></span>
+	</div>
+	<div class="record-wrapper">
+		<div class="row" ng-repeat="record in singRecords">
+			<div class="item">
+				<span>考勤员工：</span><span ng-bind="record.name"></span>
+			</div>
+			<div class="item">
+				<span>考勤来源：</span><span ng-bind="record.signsource"></span>
+			</div>
+			<div class="item">
+				<span>考勤项目：</span><span ng-bind="record.project"/>
+			</div>
+			<div class="item">
+				<span>考勤地址：</span><span ng-bind="record.address"/>
+			</div>
+			<div class="item">
+				<span>考勤时间：</span><span ng-bind="record.signtime"/>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.signRecord-wrapper{
+		height: 100%;
+		width: 100%;
+	}
+	.signRecord-wrapper .signrecord-head{
+		padding-left: 5px;
+		height: 30px;
+		line-height: 30px;
+		background: #F0F0F0;
+		color: #A3A337;
+	}
+	.signRecord-wrapper .record-wrapper{
+		width: 100%;
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		padding-right: 10px;
+	}
+	.signRecord-wrapper .row{
+		/*display: flex;*/
+		padding: 10px;
+		padding-bottom: none
+		border-top: 1px solid lightgray;
+		border-bottom: 1px solid lightgray;
+	}
+
+	.signRecord-wrapper .row .item{
+		padding-top: 5px;
+	}
+</style>

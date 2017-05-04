@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<title>Attendence</title>
+	<link rel="stylesheet" type="text/css" href="/static/styles/csses/reset.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles/csses/main.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles/csses/font.css">
+</head>
+<body  ng-controller="mainCtr">
+	<div class="contain-wrapper">
+		<header>
+			<div class="header-title">
+				<span ng-bind="info.title"></span>
+			</div>
+		</header>
+		<div class="content" ng-view></div>
+		<footer></footer>
+	</div>
+	<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=91bc04aac3d665927d8c64750da556a9"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+	<script src="./static/scripts/vendor/anjular.min-1.0.1.js"></script>
+	<script src="./static/scripts/controllers/controllers.js"></script> -->
+	<script src="./static/scripts/vendor/require.js" data-main="./static/scripts/requireMain.js"></script>
+</body>
+</html>

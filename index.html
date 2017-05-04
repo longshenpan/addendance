@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="attendenceApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<title>Attendence</title>
+	<link rel="stylesheet" type="text/css" href="/static/styles/csses/login.css">
+</head>
+<body>
+	<div class="login-wrapper">
+		<div class="logon">
+			<img src="/static/images/login/logon.png"/>
+		</div>
+		<form class="login-form" action="" method="" name="loginForm" ng-controller="loginCtr" id="loginform">
+			<div class="row">
+				<div class="td"><label for="telephone" ng-bind="loginObj.username"></label></div>
+				<div class="td"><input type="tel" name="telephone" id="telephone" ng-model="userinfo.username"/></div>
+			</div>
+			<div class="row">
+				<div class="td"><label for="password" ng-bind="loginObj.password"></label></div>
+				<div class="td"><input type="password" name="password" id="password" ng-model="userinfo.password"/></div>
+			</div>
+			<div class="row login-btn">
+				<div class="td"><input type="button" value="{{loginObj.btn.login}}" id="login" ng-click="loginRequired($event)"/></div>
+				<div class="td"><input type="button" value="{{loginObj.btn.register}}"/></div>
+			</div>
+		</form>
+	</div>
+	<script src="./static/scripts/vendor/angular.js"></script>
+	<script src="./static/scripts/controllers/loginController.js"></script>
+</body>
+</html>
